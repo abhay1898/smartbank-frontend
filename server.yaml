@@ -58,6 +58,8 @@ spec:
           env:
             - name: spring.application.name
               value: apiserversba-services-abhay
+            - name: spring.datasource.url
+              value: jdbc:postgresql://postgres:5432/smartbankapp
             - name: server.port
               value: "8080"
             - name: ELASTIC_APM_SERVER_URL 
