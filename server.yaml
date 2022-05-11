@@ -69,7 +69,19 @@ spec:
             - name: cloud.aws.end-point.uri
               value: "https://sqs.ap-south-1.amazonaws.com/175652158808/abhay-ordernotification"
             - name: cloud.aws.region.static
-              value: "ap-south-1"  
+              value: "ap-south-1" 
+            - name: spring.mail.host
+              value: "email-smtp.ap-south-1.amazonaws.com" 
+            - name: spring.mail.properties.mail.transport.protocol
+              value: "smtp" 
+            - name: spring.mail.properties.mail.smtp.port
+              value: "587" 
+            - name: spring.mail.properties.mail.smtp.auth
+              value: "true" 
+            - name: spring.mail.properties.mail.smtp.starttls.enable
+              value: "true" 
+            - name: spring.mail.properties.mail.smtp.starttls.required
+              value: "true"   
             - name: ELASTIC_APM_SERVER_URL 
               valueFrom:
                 configMapKeyRef:
