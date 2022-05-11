@@ -49,7 +49,7 @@ spec:
           name: elastic-apm-agent 
         command: ['cp', '-v', '/usr/agent/elastic-apm-agent.jar', '/elastic/apm/agent']     
       containers:
-        - image: abhay1813/apiserversqs:2	
+        - image: abhay1813/apiserversqs:3	
           imagePullPolicy: Always
           name: apiserversba-services
           volumeMounts: 
